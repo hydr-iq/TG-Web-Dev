@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors & Visual Rules Opdracht 3</title>
+    <link rel="stylesheet" href="Opdr3.css">
+</head>
+<body>
+     <!--Type Selectors en voorbeelden-->
+     <h2>Verschillende selectors en voorbeelden</h2>       
+     <ul>
+     <li><h3>Type selectors</h3></li>
+     <p>De CSS type selector, ook wel bekend als <em>tag name</em> of <em>element selector</em>, matcht/selecteert een HTML tag/element van de desbetreffende type in een document. Voorbeeld:</p>
+     <p>/* All <a> elements. *</p>
+        <p>a {</p>
+          <p>color: red;</p>
+        <p>}</p>
+        <p>In het voorbeeld hieronder zie je dat specifieke paragraafelementen in HTML getagd zijn en in CSS gestyled zijn.</p>
+            <h1>Type selectors</h1>
+            <p>Veggies es bonus vobis, proinde vos postulo essum magis <span>kohlrabi welsh onion</span> daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+
+            <p>Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+
+            <p>Turnip greens yarrow ricebean rutabaga <em>endive cauliflower</em> sea lettuce kohlrabi amaranth water spinach avocado
+            daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach</p>
+
+     <br>
+     <li><h3>Descendant selectors</h3></li>
+     <p>De descendant selector stelt je in staat om je te beperken tot elementen die afstammeling (descendant) zijn van een ander element. De syntaxis is erg eenvoudig, je geeft de naam van de parent (ouder), één of meer spaties, en dan de naam van het element dat je eigenlijke doel is. Hier volgt een voorbeeld:</p>
+     <p><style type="text/css"></p>
+        <p>p b {</p>
+        <p>    color: Blue;</p>
+        <p>}</p>
+        <p></style></p>
+        
+        <p>Hello, <b>world</b> - what a <b>beautiful</b> day!</p>
+        
+        <p>Hello, <b>world</b> - what a <b>beautiful</b> day!</p>
+
+        <p>
+        In dit voorbeeld willen we vetgedrukte tekst blauw maken, maar alleen als het behoort tot een alinea ("paragraph") gedefinieerd met (p) ... (/p). Je ziet in het voorbeeld dat er vier (b) tags voorkomen, de eerste twee binnen een paragraph element - ze zijn kinderen van (p) - en de laatste twee tags zijn niet ingesloten door paragraph tags. De inhouden van de eerste twee bold tags zijn blauw dankzij onze descendant selector. De inhouden van de laatste twee bold tags hebben de default kleur zwart.
+        </p>
+     <br>
+     <li><h3>Class selectors</h3></li>
+     <p>De CSS class selector start met een punt(.). Het zal alles selecteren in het document waar deze class staat vermeld.</p>
+     <p>In onderstaande bijvoorbeeld zijn specifieke delen van de tekst geel gearceerd door specifieke toepassing van tags in de HTML code op die delen van de tekst en vervolgens de styling ervan in de CSS sheet.</p>
+        <h1 class="highlight">Class selectors</h1>
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis <span class="highlight">kohlrabi welsh onion</span> daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+
+        <p class="highlight">Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+    </ul>
+</body>
+</html>
